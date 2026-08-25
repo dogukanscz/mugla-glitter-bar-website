@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muğla Glitter Bar — Her etkinliğe biraz ışıltı</title>
+    <meta name="description" content="Muğla Glitter Bar: düğün, kına, bekârlığa veda, doğum günü ve tekne partilerinde yüz taşı ve sim uygulaması. Merkez Muğla, hizmet tüm Türkiye." />
+    <meta name="theme-color" content="#2A1024" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400;1,6..96,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <a class="skip" href="#biz">İçeriğe geç</a>
+
+    <!-- ============ NAV ============ -->
+    <header class="nav" id="nav">
+      <a class="nav__brand" href="#top" aria-label="Muğla Glitter Bar ana sayfa">
+        <img class="nav__logo" src="/images/logo.png" alt="Muğla Glitter Bar" width="778" height="518" />
+      </a>
+      <nav class="nav__links" aria-label="Sayfa bölümleri">
+        <a href="#biz">Biz kimiz</a>
+        <a href="#hizmetler">Hizmetler</a>
+        <a href="#etkinlikler">Etkinlikler</a>
+        <a href="#galeri">Galeri</a>
+        <a href="#iletisim">İletişim</a>
+      </nav>
+      <a class="btn btn--small nav__cta" data-wa href="#iletisim">Rezervasyon</a>
+      <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="mobileMenu" aria-label="Menüyü aç">
+        <span></span><span></span>
+      </button>
+    </header>
+
+    <div class="menu" id="mobileMenu" hidden>
+      <nav aria-label="Mobil menü">
+        <a href="#biz">Biz kimiz</a>
+        <a href="#hizmetler">Hizmetler</a>
+        <a href="#etkinlikler">Etkinlikler</a>
+        <a href="#galeri">Galeri</a>
+        <a href="#iletisim">İletişim</a>
+      </nav>
+      <a class="btn btn--primary" data-wa href="#iletisim">WhatsApp'tan yaz</a>
+      <p class="menu__foot">Muğla merkezli · tüm Türkiye · <a data-ig href="#">Instagram</a></p>
+    </div>
+
+    <main id="top">
+      <!-- ============ HERO ============ -->
+      <section class="hero" aria-labelledby="heroTitle">
+        <canvas class="hero__sparkles" id="sparkles" aria-hidden="true"></canvas>
+        <div class="hero__inner">
+          <div class="hero__copy">
+            <p class="eyebrow hero__eyebrow">Muğla'da parlamanın tek adresi</p>
+            <h1 class="hero__title" id="heroTitle">
+              Her etkinliğe<br />biraz <em class="foil">ışıltı.</em>
+            </h1>
+            <p class="hero__sub">
+              Yüz taşı ve sim uygulamasıyla etkinliğinize geliyoruz.
+              Kına gecesinden tekne partisine, doğum gününden düğüne.
+            </p>
+            <div class="hero__actions">
+              <a class="btn btn--primary" data-wa href="#iletisim">WhatsApp'tan yaz</a>
+              <a class="btn btn--ghost" href="#galeri">Galeriye bak</a>
+            </div>
+          </div>
+          <figure class="hero__media">
+            <img data-slot="hero" src="/images/hero.jpg" alt="Yüzüne mavi taş uygulanmış bir konuk, pembe simli fon önünde" fetchpriority="high" />
+            <span class="hero__media-tag">Düğün · Kına · Bekârlığa veda</span>
+          </figure>
+        </div>
+        <div class="ticker" aria-hidden="true">
+          <div class="ticker__track">
+            <span>Düğün</span><i></i><span>Kına gecesi</span><i></i><span>Bekârlığa veda</span><i></i><span>Doğum günü</span><i></i><span>Tekne partisi</span><i></i><span>Beach club</span><i></i><span>Kurumsal etkinlik</span><i></i><span>Festival</span><i></i>
+            <span>Düğün</span><i></i><span>Kına gecesi</span><i></i><span>Bekârlığa veda</span><i></i><span>Doğum günü</span><i></i><span>Tekne partisi</span><i></i><span>Beach club</span><i></i><span>Kurumsal etkinlik</span><i></i><span>Festival</span><i></i>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ BİZ KİMİZ ============ -->
+      <section class="about section" id="biz" aria-labelledby="aboutTitle">
+        <div class="about__grid">
+          <div class="about__text reveal">
+            <p class="eyebrow">Biz kimiz</p>
+            <h2 class="display" id="aboutTitle">
+              Muğla'dan yola çıktık, <em>Türkiye'nin her yerinde</em> parlıyoruz.
+            </h2>
+            <p class="lead">
+              Muğla Glitter Bar, etkinliğinizin tam ortasına kurulan mobil bir sim ve yüz taşı ekibi.
+              Merkezimiz Muğla; ama festivalden kurumsal lansmana, kınadan düğüne, bekârlığa vedadan
+              beach party ve DJ gecelerine kadar Türkiye'nin her yerine geliyoruz. Simli fon, ayna,
+              yüzlerce taş: konuklarınız sırayla gelir, dakikalar içinde fotoğrafa hazır çıkar.
+            </p>
+            <ul class="facts" aria-label="Öne çıkanlar">
+              <li>
+                <strong>Merkez Muğla, hizmet tüm Türkiye</strong>
+                <span>Bodrum'dan İstanbul'a, Antalya'dan İzmir'e; şehir fark etmeksizin ekibimizle geliyoruz.</span>
+              </li>
+              <li>
+                <strong>Festivalden düğüne her ölçek</strong>
+                <span>Yirmi kişilik kına da, binlerce kişilik festival alanı da. Ekip büyüklüğünü etkinliğe göre kuruyoruz.</span>
+              </li>
+              <li>
+                <strong>Cilt dostu, gece boyunca kalıcı</strong>
+                <span>Kozmetik onaylı yapıştırıcı ve taşlar. Dans etseniz de yerinde durur, gece sonunda kolayca çıkar.</span>
+              </li>
+            </ul>
+          </div>
+          <figure class="about__media reveal">
+            <img data-slot="about" src="/images/about.jpg" alt="Muğla Glitter Bar ile parlayan bir arkadaş grubu, tekne partisinde" loading="lazy" />
+          </figure>
+        </div>
+      </section>
+
+      <!-- ============ HİZMETLER ============ -->
+      <section class="services section" id="hizmetler" aria-labelledby="servicesTitle">
+        <div class="section__head reveal">
+          <p class="eyebrow">Hizmetler</p>
+          <h2 class="display" id="servicesTitle">Neler yapıyoruz</h2>
+        </div>
+        <ul class="list" id="serviceList">
+          <li class="list__row reveal" data-img="/images/service-1.jpg">
+            <h3>Yüz taşı</h3>
+            <p>Elmacık kemiği ve göz çevresine yerleşen imza uygulamamız. Zarif ya da cesur; size göre.</p>
+          </li>
+          <li class="list__row reveal" data-img="/images/service-2.jpg">
+            <h3>Vücut & kol taşı</h3>
+            <p>Dekolte, omuz ve bileğe küçük kristal detaylar. Elbiseyle bütünleşir.</p>
+          </li>
+          <li class="list__row reveal" data-img="/images/service-3.jpg">
+            <h3>Çocuk yüz boyama</h3>
+            <p>Futbol topu, kelebek, dinozor… Daha küçük taşlar, daha yumuşak malzeme, aynı heyecan.</p>
+          </li>
+          <li class="list__row reveal" data-img="/images/service-4.jpg">
+            <h3>Gelin & kına tasarımı</h3>
+            <p>Geline özel, kıyafet ve makyajla uyumlu taş yerleşimi. Nedimeler için eşleşen setler.</p>
+          </li>
+          <li class="list__row reveal" data-img="/images/service-5.jpg">
+            <h3>Grup paketleri</h3>
+            <p>Arkadaş grupları için tek fiyat, birlikte fotoğraf. Bekârlığa veda ve tekne partilerinde favori.</p>
+          </li>
+        </ul>
+        <div class="list__preview" id="servicePreview" aria-hidden="true"><img alt="" /></div>
+      </section>
+
+
+      <!-- ============ FESTİVAL ============ -->
+      <section class="festival section section--dark" id="festival" aria-labelledby="festivalTitle">
+        <div class="festival__grid">
+          <div class="festival__text reveal">
+            <p class="eyebrow">Festival</p>
+            <h2 class="display" id="festivalTitle">Festival modu: <em>daha cesur,</em> daha parlak.</h2>
+            <p class="lead">
+              Sahne önünde ya da alanın en hareketli köşesinde kuruluyoruz. Holografik ve neon taşlar,
+              cesur renkler, gruplara eşleşen tasarımlar. Kalabalık ne kadar büyük olursa olsun sıra
+              hızlı akar; herkes ışıklar sönmeden parlar.
+            </p>
+            <ul class="festival__list" aria-label="Festival hizmeti öne çıkanlar">
+              <li><strong>Alan kurulumu</strong><span>Simli fon, aydınlatma ve ayna ile kendi köşemizi getiriyoruz; organizasyona yük olmuyoruz.</span></li>
+              <li><strong>Büyük ekip, hızlı sıra</strong><span>Konuk sayısına göre birden fazla uygulayıcı; bekleme yok, akış var.</span></li>
+              <li><strong>DJ geceleri & beach party</strong><span>Gün batımından kapanışa kadar sahadayız. Sponsor ve marka renklerine uyum sağlıyoruz.</span></li>
+            </ul>
+            <a class="btn btn--primary" data-wa href="#iletisim">Festival için yazın</a>
+          </div>
+          <div class="festival__media reveal" aria-hidden="true">
+            <figure class="festival__img festival__img--main">
+              <img data-slot="festival-1" src="/images/festival-1.jpg" alt="" loading="lazy" />
+            </figure>
+            <figure class="festival__img festival__img--small">
+              <img data-slot="festival-2" src="/images/festival-2.jpg" alt="" loading="lazy" />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ ETKİNLİKLER ============ -->
+      <section class="events section" id="etkinlikler" aria-labelledby="eventsTitle">
+        <div class="section__head reveal">
+          <p class="eyebrow">Etkinlikler</p>
+          <h2 class="display" id="eventsTitle">Nerelerde <em>parlıyoruz</em></h2>
+        </div>
+        <ul class="list list--events" id="eventList">
+          <li class="list__row reveal" data-img="/images/event-1.jpg">
+            <h3>Düğün & kına</h3>
+            <p>Gelin, nedimeler ve gece boyunca isteyen her konuk için.</p>
+          </li>
+          <li class="list__row reveal" data-img="/images/event-2.jpg">
+            <h3>Bekârlığa veda</h3>
+            <p>Eşleşen tasarımlar, cesur renkler, bol fotoğraf.</p>
+          </li>
+          <li class="list__row reveal" data-img="/images/event-3.jpg">
+            <h3>Doğum günü</h3>
+            <p>Çocuk ya da yetişkin; partinin en kalabalık köşesi biz oluruz.</p>
+          </li>
+          <li class="list__row reveal" data-img="/images/event-4.jpg">
+            <h3>Tekne & beach club</h3>
+            <p>Bodrum'dan Fethiye'ye, yaz partilerinin ışıltılı köşesi.</p>
+          </li>
+          <li class="list__row reveal" data-img="/images/event-5.jpg">
+            <h3>Kurumsal & festival</h3>
+            <p>Lansman, yılbaşı partisi, marka aktivasyonu. Renklerinize uyarız.</p>
+          </li>
+        </ul>
+        <div class="list__preview list__preview--wide" id="eventPreview" aria-hidden="true"><img alt="" /></div>
+      </section>
+
+      <!-- ============ GALERİ ============ -->
+      <section class="gallery section" id="galeri" aria-labelledby="galleryTitle">
+        <div class="section__head reveal">
+          <p class="eyebrow">Galeri</p>
+          <h2 class="display" id="galleryTitle">Son <em>etkinliklerden</em></h2>
+        </div>
+        <div class="gallery__grid" id="galleryGrid"></div>
+      </section>
+
+      <!-- ============ SÜREÇ ============ -->
+      <section class="process section" id="surec" aria-labelledby="processTitle">
+        <div class="section__head reveal">
+          <p class="eyebrow">Nasıl ilerliyor?</p>
+          <h2 class="display" id="processTitle">Dört adımda <em>ışıltı</em></h2>
+        </div>
+        <ol class="steps reveal">
+          <li>
+            <span class="steps__num">1</span>
+            <h3>Yazın</h3>
+            <p>Tarih, mekân ve tahmini konuk sayısını WhatsApp'tan iletin.</p>
+          </li>
+          <li>
+            <span class="steps__num">2</span>
+            <h3>Planlayalım</h3>
+            <p>Süre, palet ve ekip büyüklüğünü birlikte netleştirip fiyatı paylaşalım.</p>
+          </li>
+          <li>
+            <span class="steps__num">3</span>
+            <h3>Gelip kuralım</h3>
+            <p>Etkinlikten önce gelir, simli fonu ve masayı hazır ederiz.</p>
+          </li>
+          <li>
+            <span class="steps__num">4</span>
+            <h3>Parlayın</h3>
+            <p>Gerisi bize ait. Siz sadece fotoğrafları çekin.</p>
+          </li>
+        </ol>
+      </section>
+
+      <!-- ============ İLETİŞİM ============ -->
+      <section class="contact section section--dark" id="iletisim" aria-labelledby="contactTitle">
+        <div class="contact__inner reveal">
+          <p class="eyebrow">Rezervasyon</p>
+          <h2 class="display contact__title" id="contactTitle">Etkinliğinizi <em class="foil">konuşalım.</em></h2>
+          <p class="lead">Tarihinizi söyleyin, aynı gün dönüş yapalım. Yoğun sezonda takvim hızlı doluyor.</p>
+          <div class="contact__actions">
+            <a class="btn btn--primary btn--large" data-wa href="#">WhatsApp'tan yaz</a>
+            <a class="btn btn--ghost btn--large" data-tel href="#">Ara</a>
+          </div>
+          <div class="contact__grid">
+            <dl class="contact__details">
+              <div><dt>Telefon</dt><dd><a data-tel data-tel-label href="#">0553 570 6175</a><br /><a data-tel2 href="#">0552 142 16 82</a></dd></div>
+              <div><dt>Instagram</dt><dd><a data-ig data-ig-label href="#" target="_blank" rel="noopener">@mugla.glitter.bar</a></dd></div>
+              <div><dt>Hizmet alanı</dt><dd>Merkez Muğla; Bodrum, Marmaris, Fethiye ve Türkiye'nin her yeri.</dd></div>
+            </dl>
+            <a class="contact__qr" data-ig href="#" target="_blank" rel="noopener">
+              <img src="/images/qr.jpg" alt="Instagram QR kodu" width="536" height="531" loading="lazy" />
+              <span>Instagram'da takip edin</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <img class="footer__logo" src="/images/logo.png" alt="Muğla Glitter Bar" width="778" height="518" loading="lazy" />
+      <nav class="footer__links" aria-label="Alt menü">
+        <a href="#biz">Biz kimiz</a>
+        <a href="#hizmetler">Hizmetler</a>
+        <a href="#galeri">Galeri</a>
+        <a data-ig href="#" target="_blank" rel="noopener">Instagram</a>
+      </nav>
+      <span class="footer__copy">© 2026 Muğla Glitter Bar</span>
+    </footer>
+
+    <a class="mobile-cta btn btn--primary" data-wa href="#iletisim">WhatsApp'tan yaz</a>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

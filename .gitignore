@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.DS_Store
+.playwright-mcp/
+
+# Repoya girmeyecek özel dosyalar
+/images/
+/README.md
